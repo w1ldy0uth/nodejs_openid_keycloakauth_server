@@ -1,5 +1,8 @@
+// Common view of PostgreSQL connection URL 
+// postgresql://[user[:password]@][netloc][:port][/dbname][?param1=value1&...]
+
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
